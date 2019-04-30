@@ -1,6 +1,11 @@
 <%= form_for(@post) do |f| %>
-  <label>Post title:</label><br>
+  <%= f.label "Post Title"%><br>
   <%= f.text_field :title %><br>
 
+  <%= f.label "Post Description"%>
+  <%= f.text_field :description %>
+  
   <%= f.submit %>
 <% end %>
+
+<%= button_to "Go Back", posts_path, html_options = { :method => :get } %>

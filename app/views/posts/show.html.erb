@@ -1,2 +1,5 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
+
+<%= button_to "Edit Post", edit_post_path, html_options = { :method => :get } %>
+<%= button_to "Go Back", posts_path, html_options = { :method => :get } %>
