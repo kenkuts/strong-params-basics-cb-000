@@ -4,8 +4,8 @@
 
   <%= f.label "Post Description"%>
   <%= f.text_field :description %>
-  
-  <%= f.submit %>
+
+  <%= f.submit "Save Edits"%>
 <% end %>
 
 <%= button_to "Go Back", posts_path, html_options = { :method => :get } %>
